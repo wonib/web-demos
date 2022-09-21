@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+   <form>
+   	<table border="1">
+   	<tr><th colspan="2">信息统计表</th></tr>
+   		<tr>
+   		<td>姓名：</td><td><input type="text"></td>
+   		</tr>
+   		<tr>
+   		<td>年龄：</td><td><input type="text"></td>
+   		</tr>
+   		<tr>
+   		<td>性别：</td><td><input type="radio" name="sex" value="1">男
+   			<input type="radio" name="sex" value="0">女</td>
+   		</tr>
+   		<tr>
+   		<td>爱好：</td><td>
+   			<input type="checkbox" name="hobby" value="1">编程<br>
+   			<input type="checkbox" name="hobby" value="2">运动<br>
+   			<input type="checkbox" name="hobby" value="3">游泳<br>
+   			</td>
+   		</tr>
+   		<tr>
+   		<td>学历：</td>
+   			<td>
+   			<select name="degree">
+   				<option value="0">--请选择</option>
+   				<option value="1">本科</option>
+   				<option value="3">硕士</option>
+   				<option value="4">博士及以上</option>
+   				</select>
+   			</td>
+   		</tr>
+   		<tr>
+   		<td>请输入一些评论</td><td><textarea  rows="3" cols="30" name="comment">请在此评论</textarea></td>
+   		</tr>
+   		<tr>
+   			<td colspan="2" align="center">
+   		<input type="submit" value="提交">
+   			<input type="reset" value="重置">
+   			<input type="button" value="运算结果">
+   			</td>
+   		</tr>
+   	</table>
+   	</form>
+  </body>
+</html>
